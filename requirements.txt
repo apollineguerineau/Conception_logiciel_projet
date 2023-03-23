@@ -1,0 +1,4 @@
+bulk-geocoding
+pydantic
+fastapi
+uvicorn

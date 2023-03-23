@@ -1,4 +1,4 @@
-from adresse import Adresse
+from adresse import *
 from meteo import Meteo
 from pydantic import BaseModel
 from fastapi import FastAPI
@@ -22,6 +22,20 @@ class AdresseCreation(BaseModel):
     nom_voie: str
     code_postal: int
 
+
+@app.get("/is_adresse")
+async def get_meteo(adresse: AdresseCreation):
+    numero = adresse.numero
+    type_voie = adresse.type_voie
+    nom_voie = adresse.nom_voie
+    code_postal = adresse.code_postal
+    adresse = Adresse(numero, type_voie, nom_voie, code_postal)
+    meteo = Meteo(adresse)
+    try :
+        adresse.donne_latitude_longitude()
+    except Adresse_Exception :
+        return (False)
+    return(True)
 
 @app.get("/adresse")
 async def get_meteo(adresse: AdresseCreation):
