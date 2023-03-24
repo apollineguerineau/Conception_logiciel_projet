@@ -7,7 +7,7 @@ class View:
           <head>
             <title>La météo en instantanée avec Toobo</title>
         </head>
-        <h1>La meteo en instantanee</h1>
+        <h1>La météo en instantanée avec Toobo</h1>
         <body>
             <form method="POST" action="/address">
             <label for="num">Entrez votre numéro de rue:</label>
@@ -15,30 +15,31 @@ class View:
                 type="text"
                 id="num"
                 name="num"
-                placeholder="ex : 3"
-                size="30"><br/>
+                placeholder="ex : 51"
+                size="30"><br>
             <label for="type_voie">Entrez le type de la voie:</label>
             <input
                 type="text"
                 id="type_voie"
                 name="type_voie"
                 placeholder="ex : Rue"
-                size="30"><br/>
+                size="30"><br>
             <label for="nom_voie">Entrez le nom de la voie:</label>
             <input
                 type="text"
                 id="nom_voie"
                 name="nom_voie"
-                placeholder="ex : Saint-Hélier"
-                size="30"><br/>
-            <label for="code_postal">Entrez votre code postal:</label>
+                placeholder="ex : Blaise Pascal"
+                size="30"><br>
+            <label for="code_postal">Entrez le code INSEE de la commune:</label>
             <input
                 type="text"
                 id="code_postal"
                 name="code_postal"
-                placeholder="ex : 35000"
-                size="30"><br>
-            <input type="submit" value="Valider">
+                placeholder="ex : 35047"
+                size="30"><br><br>
+            <input type="submit" value="Valider"> <br> <br>
+            <img src="/static/toobo-bonobo.gif" width="600px">
             </form>
         </body>
     '''
@@ -52,7 +53,7 @@ class View:
                 dégagé au {adresse},
                 et la température est de {temp}°C.</h3>
                 <h3> Le ciel pourrait ressembler à : </h3>
-                <img src="/static/clear_sky.gif" width="400px">
+                <img src="/static/clear_sky.gif" width="400px" height="300px">
             </body>"""
 
     def mainly_clear(adresse, temp):

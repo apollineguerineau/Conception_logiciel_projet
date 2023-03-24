@@ -1,5 +1,4 @@
 from flask import Flask, request
-from view import View
 from meteo import Meteo
 from adresse import Adresse
 
