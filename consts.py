@@ -29,3 +29,34 @@ codes = {
     96: "thunderstorm with slight and heavy hail",
     99: "thunderstorm with slight and heavy hail"
         }
+
+functions = {
+    0: clear_sky,
+    1: mainly_clear,
+    2: mainly_clear,
+    3: mainly_clear,
+    45: fog,
+    48: fog,
+    51: drizzle,
+    53: drizzle,
+    55: drizzle,
+    56: freezing_drizzle,
+    57: freezing_drizzle,
+    61: rain,
+    63: rain,
+    65: rain,
+    66: freezing_rain,
+    67: freezing_rain,
+    71: snow_fall,
+    73: snow_fall,
+    75: snow_fall,
+    77: snow_grains,
+    80: rain_showers,
+    81: rain_showers,
+    82: rain_showers,
+    85: snow_showers,
+    86: snow_showers,
+    95: thunderstorm,
+    96: thunderstorm_hail,
+    99: thunderstorm_hail
+        }

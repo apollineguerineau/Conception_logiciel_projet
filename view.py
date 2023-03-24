@@ -3,6 +3,26 @@ class View:
         self.adresse = adresse
         self.temp = temp
 
+    def home():
+        return '''
+          <head>
+            <title>La meteo en instantanee</title>
+        </head>
+        <h1>La meteo en instantanee</h1>
+        <body>
+            <form method="POST" action="/address">
+            <label for="address">Entrez votre adresse:</label>
+            <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="ex : 3, Rue de la Liberté, 35000"
+                size="30">
+            <input type="submit" value="Valider">
+            </form>
+        </body>
+    '''
+
     def clear_sky():
         return
         f"""<head><title>Meteo</title>
