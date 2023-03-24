@@ -11,14 +11,18 @@ def home():
 
 @app.route('/address', methods=['POST'])
 def address():
-    adress_number = request.form['address']
-    print(f"L'adresse est : {user_address}")
-    print(Meteo(user_adress).donne_meteo())
-    # meteo = Meteo(user_adresse)
-    # print(meteo.donne_meteo())
-    # temp, code = Meteo.donne_meteo()
-    if user_address == "3, Rue Saint-Hélier, 35000" :
-        return render_template("snow_grains.html")
+    adress_number = request.form['num']
+    adress_type = request.form['type_voie']
+    adress_name = request.form['nom_voie']
+    adress_postal = request.form['code_postal']
+    print(adress_number, adress_type, adress_name, adress_postal)
+    user_adress = Adresse(int(adress_number), str(adress_type), str(adress_name), int(adress_postal))
+    print(f"L'adresse est : {adress_number}, {adress_type} {adress_name}, {adress_postal}")
+    meteo = Meteo(user_adress)
+    print(meteo.donne_meteo())
+    #temp, code = Meteo.donne_meteo()
+    return render_template("snow_grains.html")
+    # return Vie.drizzle()
     #     return f"""<head><title>Meteo</title>
     #             <meta charset=utf-8> </head>
     #             <body>
