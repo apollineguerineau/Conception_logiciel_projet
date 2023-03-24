@@ -1,6 +1,6 @@
-from flask import Flask, request, render_template
-from view import View
+from flask import Flask, request
 from meteo import Meteo
+from view import View
 from adresse import *
 
 app = Flask(__name__)
