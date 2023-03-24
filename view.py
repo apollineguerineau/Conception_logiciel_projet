@@ -15,30 +15,31 @@ class View:
                 type="text"
                 id="num"
                 name="num"
-                placeholder="ex : 3"
-                size="30"><br/>
+                placeholder="ex : 51"
+                size="30"><br>
             <label for="type_voie">Entrez le type de la voie:</label>
             <input
                 type="text"
                 id="type_voie"
                 name="type_voie"
                 placeholder="ex : Rue"
-                size="30"><br/>
+                size="30"><br>
             <label for="nom_voie">Entrez le nom de la voie:</label>
             <input
                 type="text"
                 id="nom_voie"
                 name="nom_voie"
-                placeholder="ex : Saint-Hélier"
-                size="30"><br/>
+                placeholder="ex : Blaise Pascal"
+                size="30"><br>
             <label for="code_postal">Entrez votre code postal:</label>
             <input
                 type="text"
                 id="code_postal"
                 name="code_postal"
-                placeholder="ex : 35000"
+                placeholder="ex : 35047"
                 size="30"><br>
-            <input type="submit" value="Valider">
+            <input type="submit" value="Valider"><br><br>
+            <img src="/static/toobo-bonobo.gif" width="400px">
             </form>
         </body>
     '''
