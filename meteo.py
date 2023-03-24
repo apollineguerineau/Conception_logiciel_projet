@@ -1,4 +1,3 @@
-import consts as cs
 import requests
 
 
@@ -11,4 +10,5 @@ class Meteo:
         r = requests.get(f'https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&hourly=temperature_2m,weathercode&current_weather=true')
         response = r.json()['current_weather']
         code = response['weathercode']
-        return (response['temperature'], cs.codes[code])
+        temp = response['temperature']
+        return (temp, code)
