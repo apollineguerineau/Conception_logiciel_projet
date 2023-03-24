@@ -48,19 +48,20 @@ class View:
                 <meta charset=utf-8>
             </head>
             <body>
-                <h3>Il fait beau, il fait chaud, le ciel est totalement dégagé au {adresse},
+                <h3>Il fait beau, il fait chaud, le ciel est totalement
+                dégagé au {adresse},
                 et la température est de {temp}°C.</h3>
                 <h3> Le ciel pourrait ressembler à : </h3>
                 <img src="/static/clear_sky.gif" width="400px">
             </body>"""
-
 
     def mainly_clear(adresse, temp):
         return f"""<head><title>Meteo</title>
                 <meta charset=utf-8>
             </head>
             <body>
-                <h3>Il fait beau temps, le ciel est partiellement dégagé au {adresse},
+                <h3>Il fait beau temps, le ciel est partiellement
+                dégagé au {adresse},
                 et la température est de {temp}°C.</h3>
                 <h3> Le ciel pourrait ressembler à : </h3>
                 <img src="/static/mainly_clear.gif" width="400px">
@@ -71,7 +72,8 @@ class View:
                 <meta charset=utf-8>
             </head>
             <body>
-                <h3>Il fait un temps de genouille (t'as compris, f(r)og) au {adresse},
+                <h3>Il fait un temps de genouille (t'as compris,
+                f(r)og) au {adresse},
                 et la température est de {temp}°C.</h3>
                 <h3> Le ciel pourrait ressembler à : </h3>
                 <img src="/static/fog.gif" width="400px">
@@ -104,7 +106,8 @@ class View:
                 <meta charset=utf-8>
             </head>
             <body>
-                <h3> Ca pleut, ça mouille, c'est la fête à la grenouille au {adresse},
+                <h3> Ca pleut, ça mouille, c'est la fête à la grenouille
+                au {adresse},
                 et la température est de {temp}°C.</h3>
                 <h3> Le ciel pourrait ressembler à : </h3>
                 <img src="/static/rain.gif" width="400px">
@@ -115,7 +118,8 @@ class View:
                 <meta charset=utf-8>
             </head>
             <body>
-                <h3>Attention en sortant, il y a des pluies verglaçantes au {adresse},
+                <h3>Attention en sortant, il y a des pluies verglaçantes
+                au {adresse},
                 et la température est de {temp}°C.</h3>
                 <h3> Le ciel pourrait ressembler à : </h3>
                 <img src="/static/freezing.gif" width="400px">
@@ -148,7 +152,8 @@ class View:
                 <meta charset=utf-8>
             </head>
             <body>
-                <h3>Rain shower au {adresse}, pour les radins, c'est le moment d'en profiter
+                <h3>Rain shower au {adresse}, pour les radins, c'est
+                le moment d'en profiter
                 et la température est de {temp}°C.</h3>
                 <h3> Le ciel pourrait ressembler à : </h3>
                 <img src="/static/rain_shower.gif" width="400px">
@@ -189,32 +194,32 @@ class View:
                 </body>"""
 
     functions = {
-    0: clear_sky,
-    1: mainly_clear,
-    2: mainly_clear,
-    3: mainly_clear,
-    45: fog,
-    48: fog,
-    51: drizzle,
-    53: drizzle,
-    55: drizzle,
-    56: freezing_drizzle,
-    57: freezing_drizzle,
-    61: rain,
-    63: rain,
-    65: rain,
-    66: freezing_rain,
-    67: freezing_rain,
-    71: snow_fall,
-    73: snow_fall,
-    75: snow_fall,
-    77: snow_grains,
-    80: rain_shower,
-    81: rain_shower,
-    82: rain_shower,
-    85: snow_shower,
-    86: snow_shower,
-    95: thunderstorm,
-    96: thunderstorm_hail,
-    99: thunderstorm_hail
-        }
+                0: clear_sky,
+                1: mainly_clear,
+                2: mainly_clear,
+                3: mainly_clear,
+                45: fog,
+                48: fog,
+                51: drizzle,
+                53: drizzle,
+                55: drizzle,
+                56: freezing_drizzle,
+                57: freezing_drizzle,
+                61: rain,
+                63: rain,
+                65: rain,
+                66: freezing_rain,
+                67: freezing_rain,
+                71: snow_fall,
+                73: snow_fall,
+                75: snow_fall,
+                77: snow_grains,
+                80: rain_shower,
+                81: rain_shower,
+                82: rain_shower,
+                85: snow_shower,
+                86: snow_shower,
+                95: thunderstorm,
+                96: thunderstorm_hail,
+                99: thunderstorm_hail
+                }
