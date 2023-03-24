@@ -1,6 +1,7 @@
 from flask import Flask, request
 from meteo import Meteo
 from adresse import Adresse
+from view import View
 
 app = Flask(__name__)
 
